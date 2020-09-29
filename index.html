@@ -14,6 +14,27 @@
             text-decoration: none;
             background-color: #4CAF50;
         }
+		div.content{
+		display: none;
+		}
+		
+		.btlist{
+		background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+		display: inline-block;
+		}
+		.btlist:hover{
+		background-color: blue;
+		}
+		 .listside:hover div.content{
+		display:block;
+		}
+		
+		
+		
     </style>
 </head>
 
@@ -23,8 +44,12 @@
         <a href="css/css.html" class="navaber" style="float: right; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none;">css</a>
         <a href="js/javascript.html" class="navaber" style="float: right; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none;">javascript</a>
     </div>
-    <div class="listside" style="top:50px; width: 300px; position: fixed; height: 100%; left: 0;">
-        <ul style="list-style-type: none; margin: 0; padding: 0; width: 300px; background-color: #f1f1f1; height: 100%; position: fixed; overflow: auto;">
+	
+	
+    <div class="listside" style="position: relative; height: 100%; top:50px; display:inline-block;">
+	    <button class = "btlist" >click me!</button>
+        <div class="content">
+		<ul class= "ulis" style="list-style-type: none; margin: 0; padding: 0; width: 300px; background-color: #f1f1f1; height: 100%; position: fixed; overflow: auto;">
             <li class="ullist">
                 <a class="alist" href="html/headings.html" style="display: block; color: #000; padding: 8px 16px; text-decoration: none;">Headings</a>
             </li>
@@ -54,6 +79,7 @@
             </li>
 
         </ul>
+		</div>
     </div>
 
     <div name="content" style="margin-left: 300px; padding: 20px; margin-top: 50px;">
